@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/site.css" media="all">
+  <title>Hackathon - ITAM Sports Analytics Conference</title>
+</head>
+
+<body>
+  <header class="site-header" id="home">
+    <nav class="nav">
+      <div class="nav__brand">
+    <!--    <div class="brand-mark" aria-hidden="true"></div> -->
+        <div class="nav__logos">
+            <img src="images/itam.svg" alt="Logo 1" class="nav__logo">
+            <img src="images/club_america.webp" alt="Logo 2" class="nav__logo">
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">Hackathon ISAC</div>
+          <div class="brand-sub">ITAM Sports Analytics Conference - by Club América</div>
+        </div>
+      </div>
+
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#retos-anteriores" class="nav__link">Retos Anteriores</a></li>
+        <li><a href="#reto-2026" class="nav__link">Reto 2026</a></li>
+        <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__date"><span class="pill">6 de Noviembre de 2026</span></p>
+
+        <h1 class="hero__title">
+          Hackathon ISAC — Proyectos Anteriores
+        </h1>
+
+        <h2 class="hero__subtitle">Datos, Deporte, y Futuro</h2>
+
+        <p class="hero__text">
+          Estos son los proyectos más destacados de hackatones anteriores.
+          Este hackathon es tu oportunidad año con año de emplear tus habilidades de análisis
+          en scouting de jugadores, balón parado, y más.
+        </p>
+
+        <p class="hero__text">
+          ¡Participa en el siguiente hackathon y recibe la oportunidad de que tu proyecto sea evaluado por
+          expertos de equipos y compañías líderes mundialmente en inteligencia deportiva!
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="#retos-anteriores">Ver retos</a>
+        </div>
+      </div>
+
+      <div class="hero__media" aria-hidden="true">
+        <div class="hero-images">
+          <!-- Replace just the filenames below -->
+          <img src="images/america_festejo.webp" alt="Imagen 1" class="hero-img">
+          <img src="images/data.jpg" alt="Imagen 2" class="hero-img">
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="section" aria-labelledby="nosotros">
+      <h2 id="nosotros" class="section__title">Nosotros</h2>
+      <p class="section__text">
+        La Conferencia de Análisis Deportivo de ITAM (ISAC) es un evento anual fundado por estudiantes y exalumnos del ITAM en México.
+        Basada en la creencia de que los datos deportivos pueden transformar la industria en toda América Latina, ISAC reúne a estudiantes,
+        profesionales y empresas para explorar lo último en análisis deportivo.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="retos-anteriores">
+      <h2 id="retos-anteriores" class="section__title">Retos Anteriores</h2>
+
+      <div class="callout">
+        <p>
+          Diseña un marco o métrica de recomendación de jugadores que ayude a los clubes a responder la pregunta clave del scouting:
+          <strong>¿Qué jugador encaja mejor en nuestro equipo — y por qué?</strong>
+        </p>
+        <p>
+          Deberás ir más allá de las estadísticas en bruto o del valor contractual más bajo. Esto se trata de encaje, impacto y contexto,
+          no solo de números.
+        </p>
+      </div>
+
+      <div class="callout">
+        <p>
+          Convertir datos de ocho temporadas de la Liga MX en recomendaciones accionables y basadas en datos
+          que los entrenadores puedan utilizar en cada partido.
+          <strong>¿Qué aumenta la probabilidad de gol y el riesgo de conceder?</strong>
+        </p>
+      </div>
+
+      <p class="section__text">
+        <strong>Nosotros te proporcionamos los datos (HUDL StatsBomb).</strong><br>
+        Hay una amplia variedad de métodos de análisis y herramientas de visualización que puedes escoger (R, Python, Tableau, Streamlit, Shiny, etc.)
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="reto-2026">
+      <h2 id="reto-2026" class="section__title">Reto 2026</h2>
+    
+      <p class="section__text">
+        <!-- Agrega aquí la descripción del reto 2026 -->
+      </p>
+    
+      <p class="section__text">
+        <!-- Agrega aquí detalles adicionales, contexto o reglas -->
+      </p>
+    
+      <p class="section__text">
+        <!-- Agrega aquí información sobre entregables o criterios de evaluación -->
+      </p>
+    
+      <a href="#" target="_blank" rel="noopener" class="btn btn--primary">
+        <strong>¡Participa en el Hackathon 2026!</strong>
+      </a>
+    </section>
+    
+
+    <section class="section" aria-labelledby="proyectos">
+      <div class="section__head">
+        <h2 id="proyectos" class="section__title">Proyectos Anteriores Destacados</h2>
+
+        <div class="section__tools">
+          <input id="projectSearch" class="input" type="search" placeholder="Buscar proyectos…" aria-label="Buscar proyectos">
+          <button id="expandAll" class="btn btn--small btn--ghost" type="button">Expand</button>
+        </div>
+      </div>
+
+      <ul class="projects" id="projectsList">
+        <li class="project">
+          <button class="project__btn"
+            data-title="Optimización de Tiros de Esquina"
+            data-url="https://drive.google.com/file/d/1KXjXaJ66ZyTYbRHNwQMt4jUoyK9fMa98/view">
+            Optimización de Tiros de Esquina
+            <span class="project__meta">Google Drive</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Set-Piece Optimization"
+            data-url="https://drive.google.com/file/d/1Ox8aEqnDcBzMGd-5glru84RfaoSo7BBD/view">
+            Set-Piece Optimization
+            <span class="project__meta">Google Drive</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Adaptive Ensemble Game Insight Simulator"
+            data-url="https://drive.google.com/file/d/1UyAwS0BEVytcbt_u2_F91CoOC0ciqnv2/view">
+            Adaptive Ensemble Game Insight Simulator
+            <span class="project__meta">Google Drive</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="LAP (Last Action Percentage) Analysis System"
+            data-url="https://drive.google.com/file/d/1O2dDXHygA2qYT4Di9Lve_u4iVhSQEOjl/view">
+            LAP (Last Action Percentage) Analysis System
+            <span class="project__meta">Google Drive</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Club América - Player Scouting System"
+            data-url="https://hackatonclubamerica-h6my7qwtxbf7nf6gvbgem3.streamlit.app/">
+            Club América - Player Scouting System
+            <span class="project__meta">Streamlit</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Ojos Diamantes"
+            data-url="https://isac2025-ojos-diamantes.streamlit.app/">
+            Ojos Diamantes
+            <span class="project__meta">Streamlit</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Scouting del Club América"
+            data-url="https://drive.google.com/file/d/1Q7aVjy-2U__QhzJ1Xuba-ykg3IYI_VXI/view">
+            Scouting del Club América
+            <span class="project__meta">Google Drive</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Player Style Explorer"
+            data-url="https://player2vec.streamlit.app/">
+            Player Style Explorer
+            <span class="project__meta">Streamlit</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="El Fútbol como Sistema Predictivamente Inteligible"
+            data-url="https://isacitam.s3.us-east-1.amazonaws.com/index.html">
+            El Fútbol como Sistema Predictivamente Inteligible
+            <span class="project__meta">Web</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Análisis y Metodología de Scouting"
+            data-url="https://drive.google.com/file/d/19bsUljWV-_y6NDDbOgYFGMn8SzVrGE8G/view">
+            Análisis y Metodología de Scouting
+            <span class="project__meta">Google Drive</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Offside.exe"
+            data-url="https://drive.google.com/file/d/1mA3W_FSSuofMQrsyqG3jESna9vdoB1dz/view">
+            Offside.exe
+            <span class="project__meta">Google Drive</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Águila Analytics"
+            data-url="https://youtube.com/watch?v=S6m86nYzvIQ&feature=youtu.be">
+            Águila Analytics
+            <span class="project__meta">YouTube</span>
+          </button>
+        </li>
+
+        <li class="project">
+          <button class="project__btn"
+            data-title="Análisis Corners Liga MX"
+            data-url="https://github.com/Alex880628/Dashboard-Analisis-Corners-LigaMX">
+            Análisis Corners Liga MX
+            <span class="project__meta">GitHub</span>
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__head">
+        <h3 id="modalTitle" class="modal__title">Proyecto</h3>
+        <button class="icon-btn" aria-label="Cerrar" data-close="true">✕</button>
+      </div>
+
+      <p class="modal__url" id="modalUrl"></p>
+
+      <div class="modal__actions">
+        <a class="btn btn--primary" id="modalOpen" href="#" target="_blank" rel="noopener">Abrir proyecto</a>
+        <button class="btn btn--ghost" id="modalCopy" type="button">Copiar link</button>
+      </div>
+
+      <p class="toast" id="toast" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
+
