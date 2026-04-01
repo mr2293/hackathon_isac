@@ -101,7 +101,7 @@ if (search && projectsList) {
   });
 }
 
-// --- “Expand” button: opens first 3 projects in modal one by one (fun demo) ---
+// --- "Expand" button: opens first 3 projects in modal one by one (fun demo) ---
 const expandAll = document.getElementById("expandAll");
 if (expandAll) {
   expandAll.addEventListener("click", () => {
@@ -111,3 +111,19 @@ if (expandAll) {
     openModal(first.dataset.title, first.dataset.url);
   });
 }
+
+// --- Reto 2026 accordion ---
+document.querySelectorAll("[data-reto-toggle]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+    if (isOpen) {
+      btn.setAttribute("aria-expanded", "false");
+      body.hidden = true;
+    } else {
+      btn.setAttribute("aria-expanded", "true");
+      body.hidden = false;
+    }
+  });
+});

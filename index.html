@@ -11,7 +11,6 @@
   <header class="site-header" id="home">
     <nav class="nav">
       <div class="nav__brand">
-    <!--    <div class="brand-mark" aria-hidden="true"></div> -->
         <div class="nav__logos">
             <img src="images/itam.svg" alt="Logo 1" class="nav__logo">
             <img src="images/club_america.webp" alt="Logo 2" class="nav__logo">
@@ -64,7 +63,6 @@
 
       <div class="hero__media" aria-hidden="true">
         <div class="hero-images">
-          <!-- Replace just the filenames below -->
           <img src="images/america_festejo.webp" alt="Imagen 1" class="hero-img">
           <img src="images/data.jpg" alt="Imagen 2" class="hero-img">
         </div>
@@ -112,24 +110,173 @@
 
     <section class="section" aria-labelledby="reto-2026">
       <h2 id="reto-2026" class="section__title">Reto 2026</h2>
-    
-      <p class="section__text">
-        <!-- Agrega aquí la descripción del reto 2026 -->
-      </p>
-    
-      <p class="section__text">
-        <!-- Agrega aquí detalles adicionales, contexto o reglas -->
-      </p>
-    
-      <p class="section__text">
-        <!-- Agrega aquí información sobre entregables o criterios de evaluación -->
-      </p>
-    
+
+      <div class="reto-hero-callout">
+        <div class="reto-hero-callout__eyebrow">Reto Oficial 2026</div>
+        <h3 class="reto-hero-callout__title">"La Historia de un Entrenador a través de los Datos"</h3>
+        <p class="reto-hero-callout__question">
+          A partir del análisis de varios partidos, <strong>¿cómo juega este entrenador?</strong>
+        </p>
+        <p class="reto-hero-callout__sub">
+          Se les proporcionará un conjunto de datos de eventos (StatsBomb, StatsBomb 360) de múltiples partidos bajo un mismo entrenador.
+          El objetivo es construir, únicamente a partir de los datos, una narrativa que permita entender cómo juega ese equipo y qué ideas tácticas lo definen.
+        </p>
+      </div>
+
+      <!-- Accordion sections -->
+      <div class="reto-accordion" id="retoAccordion">
+
+        <div class="reto-item">
+          <button class="reto-item__btn" aria-expanded="false" data-reto-toggle>
+            <span class="reto-item__num">01</span>
+            <span class="reto-item__label">Descripción del Reto</span>
+            <span class="reto-item__chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="reto-item__body" hidden>
+            <p>En este proyecto se les proporcionará un conjunto de datos de eventos (Stats Bomb, Statsbomb 360) correspondiente a múltiples partidos de un mismo equipo bajo un mismo entrenador.</p>
+            <p>El objetivo es construir, únicamente a partir de los datos, una narrativa que permita entender cómo juega ese equipo y qué ideas tácticas lo definen.</p>
+            <p>La pregunta central que deberán responder es:</p>
+            <blockquote class="reto-quote">
+              ¿Cuáles son los principios que definen a su equipo en fase ofensiva y defensiva, cómo se manifiestan estos patrones a lo largo del tiempo, y de qué manera el entrenador ajusta su comportamiento en función del contexto del partido (rival, marcador, localía o momento del juego)?
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="reto-item">
+          <button class="reto-item__btn" aria-expanded="false" data-reto-toggle>
+            <span class="reto-item__num">02</span>
+            <span class="reto-item__label">Objetivo</span>
+            <span class="reto-item__chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="reto-item__body" hidden>
+            <p>El propósito del reto es que puedan traducir datos en entendimiento futbolístico, construyendo una historia clara, coherente y sustentada en evidencia concreta.</p>
+            <p>El análisis debe permitir que alguien que no haya visto los partidos pueda comprender:</p>
+            <ul class="reto-list">
+              <li>El estilo de juego del equipo</li>
+              <li>Las ideas principales del entrenador</li>
+              <li>Cómo estas ideas se repiten o evolucionan a lo largo de distintos partidos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reto-item">
+          <button class="reto-item__btn" aria-expanded="false" data-reto-toggle>
+            <span class="reto-item__num">03</span>
+            <span class="reto-item__label">Alcance del Análisis</span>
+            <span class="reto-item__chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="reto-item__body" hidden>
+            <p>Trabajarán con múltiples partidos, por lo que se espera que el análisis vaya más allá de un solo encuentro e identifique:</p>
+            <ul class="reto-list">
+              <li>Patrones recurrentes en el comportamiento del equipo</li>
+              <li>Tendencias tácticas del entrenador</li>
+              <li>Ajustes según contexto (rival, marcador, condición de local/visitante, etc.)</li>
+              <li>Diferencias entre partidos o momentos del juego</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reto-item">
+          <button class="reto-item__btn" aria-expanded="false" data-reto-toggle>
+            <span class="reto-item__num">04</span>
+            <span class="reto-item__label">Entregable</span>
+            <span class="reto-item__chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="reto-item__body" hidden>
+            <p>El entregable deberá ser una <strong>narrativa analítica</strong>, que combine:</p>
+            <ul class="reto-list">
+              <li>Explicación escrita (tipo informe o crónica analítica)</li>
+              <li>Visualizaciones</li>
+              <li><em>(Opcional)</em> Modelos o simulaciones</li>
+            </ul>
+            <p>La narrativa debe ser clara, estructurada y respaldada por evidencia en los datos.</p>
+          </div>
+        </div>
+
+        <div class="reto-item">
+          <button class="reto-item__btn" aria-expanded="false" data-reto-toggle>
+            <span class="reto-item__num">05</span>
+            <span class="reto-item__label">Componentes Esperados</span>
+            <span class="reto-item__chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="reto-item__body" hidden>
+            <div class="reto-subgrid">
+              <div class="reto-subcard">
+                <div class="reto-subcard__title">5.1 Estilo de Juego</div>
+                <p class="reto-subcard__sub">Fase ofensiva:</p>
+                <ul class="reto-list">
+                  <li>Construcción de juego</li>
+                  <li>Progresión a entre fases</li>
+                  <li>Generación de ocasiones</li>
+                </ul>
+                <p class="reto-subcard__sub">Fase defensiva:</p>
+                <ul class="reto-list">
+                  <li>Presión</li>
+                  <li>Organización defensiva</li>
+                  <li>Transiciones</li>
+                </ul>
+              </div>
+              <div class="reto-subcard">
+                <div class="reto-subcard__title">5.2 Consistencia y Variabilidad</div>
+                <ul class="reto-list">
+                  <li>¿El equipo mantiene una identidad clara?</li>
+                  <li>¿Cómo cambian los patrones según el contexto?</li>
+                </ul>
+              </div>
+              <div class="reto-subcard">
+                <div class="reto-subcard__title">5.3 Uso de Jugadores</div>
+                <ul class="reto-list">
+                  <li>Roles dentro del sistema</li>
+                  <li>Cambios en alineaciones</li>
+                  <li>Impacto de sustituciones</li>
+                </ul>
+              </div>
+              <div class="reto-subcard">
+                <div class="reto-subcard__title">5.4 Evidencia Cuantitativa</div>
+                <ul class="reto-list">
+                  <li>Uso de métricas existentes (xG, OBV, Pases Progresivos, Métricas de Presión, Field Tilt, etc.)</li>
+                  <li>Propuestas propias de métricas o enfoques analíticos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reto-item">
+          <button class="reto-item__btn" aria-expanded="false" data-reto-toggle>
+            <span class="reto-item__num">06</span>
+            <span class="reto-item__label">Uso de Simulación <span class="reto-item__optional">(Opcional)</span></span>
+            <span class="reto-item__chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="reto-item__body" hidden>
+            <p>Se podrán incorporar simulaciones como complemento del análisis, por ejemplo:</p>
+            <ul class="reto-list">
+              <li>Simular múltiples repeticiones de un mismo partido</li>
+              <li>Evaluar qué tan probable fue un resultado dado lo ocurrido</li>
+              <li>Medir dominio relativo entre equipos</li>
+            </ul>
+            <p>Las simulaciones deben utilizarse como una herramienta para <strong>explicar e interpretar</strong> el juego, no como un ejercicio orientado a predicción o apuestas.</p>
+          </div>
+        </div>
+
+      </div><!-- end accordion -->
+
+      <!-- Principle callout -->
+      <div class="reto-principle">
+        <div class="reto-principle__icon" aria-hidden="true">⚽</div>
+        <div>
+          <div class="reto-principle__label">Principio Fundamental</div>
+          <p class="reto-principle__text">
+            Su análisis debe permitir que alguien que no vio los partidos pueda entender con claridad <strong>cómo juega el equipo</strong> y cuáles son las <strong>ideas del entrenador</strong>.
+          </p>
+        </div>
+      </div>
+
       <a href="#" target="_blank" rel="noopener" class="btn btn--primary">
         <strong>¡Participa en el Hackathon 2026!</strong>
       </a>
     </section>
-    
+
 
     <section class="section" aria-labelledby="proyectos">
       <div class="section__head">
