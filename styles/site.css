@@ -667,6 +667,11 @@
     letter-spacing: -0.01em;
   }
 
+  .reto-subcard--highlight {
+  border-color: var(--color-primary); /* o el verde/navy que uses */
+  background: color-mix(in srgb, var(--color-primary) 6%, transparent);
+}
+
   .reto-subcard__sub {
     font-size: 12px;
     font-weight: 700;
