@@ -756,3 +756,16 @@
     background: #fff;
     border: 1px solid rgba(15, 23, 42, 0.10);
   }
+.site-footer-legal {
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.site-footer-legal p {
+  margin: 2px 0;
+}
